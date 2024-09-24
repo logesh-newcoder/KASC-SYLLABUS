@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    background-color: black;
+    overflow-x: hidden;
+}
+.head{
+    width: 100%;
+    height: 9rem;
+    min-height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    border-bottom: 2px solid brown;
+}
+.head .img{
+    position:absolute;
+    left: 5px;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.head img{
+    height: 90%;
+}
+.head nav{
+    position: absolute;
+    right: 15px;
+    display: flex;
+    align-items: center;
+}
+.head nav span a{
+    margin: 0rem 2rem;
+    padding: 1.1rem;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    transition: color,background-color 0.7s linear;
+}
+.head nav span a:hover{
+    background-color: white;
+    color: black;
+}
+.list{
+    width: 100%;
+    position: relative;
+}
+#child{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    z-index: 1;
+}
+#child a{
+    text-decoration: none;
+    padding: 1rem;
+    color:white;
+}
+#child a:hover{
+    background-color: white;
+    color: black;
+}
+.list:hover #child{
+    display: block;
+    display: flex;
+    flex-direction: column;
+}
+
+/*--------------nav completed--------------*/
+.imm{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.immpar{
+    margin-top: 2rem;
+    width: 80vw;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.immpar img{
+    border: 2px solid gold;
+    width: 60%;
+    height: 70%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.immpar h2{
+    position: absolute;
+    left: 2rem;
+    font-size: 1.7rem;
+}
+.immpar h4{
+    position: absolute;
+    top: 3rem;
+    left: 4rem;
+    font-size: 1.4rem;
+}
+/*------------1150px-----------*/
+@media screen and (max-width:1150px) {
+    .head{
+        height: 8rem;
+        min-height: 13%;
+    }
+    .head nav span a{
+        margin: 0rem 1.5rem;
+        padding: 0.8rem;
+        font-size: 1.7rem;
+    }
+    #child a{
+        padding: 0.8rem;
+    }    
+    .immpar{
+        margin-top: 3rem;
+        height: 350px;
+    }
+    .immpar img{
+        width: 75%;
+        height: 60%;
+    }
+    .immpar h2{
+        left: 2rem;
+        font-size: 1.7rem;
+    }
+    .immpar h4{
+        top: 3rem;
+        left: 4rem;
+        font-size: 1.4rem;
+    }    
+}
+/*------------860px-----------*/
+@media screen and (max-width:860px) {
+    .head{
+        height: 7rem;
+        min-height: 11%;
+    }    
+    .head nav{
+        right: 0.5rem;
+    }
+    .head nav span a{
+        margin: 0rem 0.5rem;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
+    #child a{
+        padding: 0.5rem;
+    }    
+    .immpar{
+        margin-top: 2.5rem;
+        height: 320px;
+    }
+    .immpar img{
+        width: 70%;
+        height: 55%;
+    }
+    .immpar h2{
+        left: 1.7rem;
+        font-size: 1.5rem;
+    }
+    .immpar h4{
+        top: 2.5rem;
+        left: 3.5rem;
+        font-size: 1.2rem;
+    }    
+}
+
+/*--------------nav completed--------------*/
+
+/*------------460px-----------*/
+@media screen and (max-width:460px) {
+    .head{
+        height: 5rem;
+        min-height: 10%;
+    }
+    .head nav{
+        position:absolute;
+        right: 7%;
+    }    
+    .head nav span a{
+        margin: 0rem 0.2rem;
+        padding: 0.1rem;
+        font-size: 0.7rem;
+    }
+    #child a{
+        padding: 0.1rem;
+    }    
+    .immpar{
+        margin-top: 2rem;
+        width: 80vw;
+        height: 190px;
+    }
+    .immpar img{
+        width: 70%;
+        height: 50%;
+    }
+    .immpar h2{
+        left: 1rem;
+        font-size: 1rem;
+    }
+    .immpar h4{
+        top: 1rem;
+        left: 1.5rem;
+        font-size: 0.7rem;
+    }    
+}
+
+/*--------------nav completed--------------*/
